@@ -1,0 +1,4 @@
+stt: whisper small/tiny
+tts: coqui-ai/xtts
+text to face: sadtalker/wav2lip
+llm: prompt
