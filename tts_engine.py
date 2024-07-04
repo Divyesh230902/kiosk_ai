@@ -59,7 +59,7 @@ def speak(text):
     reduced_noise = nr.reduce_noise(y=data, sr=rate)
 
     # Write noise-reduced audio to file
-    output_reduced_noise_path = "output_reduced_noise.wav"
+    output_reduced_noise_path = "output.wav"
     wavfile.write(output_reduced_noise_path, rate, reduced_noise)
     tts.tts_to_file(text=text, file_path=file_path,
                     speaker_wav=output_reduced_noise_path, language="hi", split_sentences=True)
